@@ -1,0 +1,45 @@
+﻿[
+ {
+"idChapter":2,
+"idLesson":1,
+"nameLesson": "Bài 1: Tổng Quan Về Android",
+"description": "Tổng quát về Android,lịch sử phát triển,kiến trúc android.....",
+"key":true
+ },
+ {
+"idChapter":2,
+"idLesson":2,
+"nameLesson": "Bài 2: Cài Đặt Môi Trường Và Phần Mềm Android Studio",
+"description": "Biết cách cài đặt môi trường và phần mềm để lập trình Android",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":3,
+"nameLesson": "Bài 3: Giới Thiệu Về Công Cụ Android Studio",
+"description": "Tìm hiểu về công cụ Android Studio",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":4,
+"nameLesson": "Bài 4: First App",
+"description": "Chương trình đơn giản đầu tiên",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":5,
+"nameLesson": "Bài 5: Cấu trúc các thứ mục một project trong Android",
+"description": "Cấu trúc của một project",
+"key":true
+ },
+{
+"idChapter":2,
+"idLesson":6,
+"nameLesson": "Bài 6: Cài đặt máy ảo của Android Studio và Genymation",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":true
+ }
+
+]

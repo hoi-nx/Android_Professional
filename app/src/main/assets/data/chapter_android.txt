@@ -1,0 +1,102 @@
+﻿[
+        {
+        "idChapter" : 1,
+        "name_title" : "Chương I: Tổng quan về Android,cài đặt công cụ và First app",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong1.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+
+ {
+        "idChapter" : 2,
+        "name_title" : "Chương II: Layout Và Các View Cơ Bản Trong Android",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong2.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 3,
+        "name_title" : "Chương III: Các Kĩ Thuật Sử Lý Sự Kiện Trong View",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong3.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 4,
+        "name_title" : "Chương IV: Cửa sổ thông báo trong android",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong4.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 5,
+        "name_title" : "Chương V: View Nâng Cao",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong5.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 6,
+        "name_title" : "Chương VI: Activity",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong6.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 7,
+        "name_title" : "Chương VII: Assets Và lưu trạng thái của ứng dụng",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong7.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 8,
+        "name_title" : "Chương VIII:Menu điều kiển và tìm kiếm",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong8.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 9,
+        "name_title" : "Chương IX: Fragment",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong9.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 10,
+        "name_title" : "Chương X:Animation",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong10.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 11,
+        "name_title" : "Chương XI:Dawable",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong11.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 12,
+        "name_title" : "Chương XII:Tiến Trình trong android",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong12.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 13,
+        "name_title" : "Chương XIII:SQLite,Realm",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong13.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        },
+ {
+        "idChapter" : 14,
+        "name_title" : "Chương XIV:ContentProvider",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong14.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it !"
+        }
+
+]

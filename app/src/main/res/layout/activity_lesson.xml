@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="4">
+    <include layout="@layout/my_tool_bar_lesson"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.github.siyamed.shapeimageview.HexagonImageView
+                android:id="@+id/img_"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+               android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/demo"
+                app:siBorderWidth="2dp"
+
+                app:siBorderColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/txt_motivation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Life is 10% what happens to you and 90% of how you react to it !"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <me.huseyinozer.TooltipIndicator
+            android:id="@+id/tooltip_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            app:ti_lineHeight="6dp"
+            app:ti_lineMargin="4dp"
+            app:ti_lineWidth="24dp"
+            app:ti_lineWidthSelected="80dp"
+            app:ti_selectedLineDrawable="@drawable/tooltip_indicator_rounded_line_selected"
+            app:ti_tooltipHeight="180dp"
+            app:ti_tooltipWidth="100dp"
+            app:ti_unselectedLineDrawable="@drawable/tooltip_indicator_rounded_line_unselected" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tooltip_indicator"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingEnd="@dimen/card_padding"
+            android:paddingLeft="@dimen/card_padding"
+            android:paddingRight="@dimen/card_padding"
+            android:paddingStart="@dimen/card_padding" />
+
+    </RelativeLayout>
+
+</LinearLayout>

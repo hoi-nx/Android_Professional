@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="green">#17bb0b</color>
+    <color name="red">#e50b1f</color>
+    <color name="bgGradientStart">#000000</color>
+    <color name="bgGradientEnd">#d8000000</color>
+
+    <color name="bgSolidDark">#55000000</color>
+
+    <color name="headGradientStart">#00ffffff</color>
+    <color name="headGradientCenter">#00ffffff</color>
+    <color name="headGradientEnd">#96000000</color>
+
+    <color name="colorListDivider">#e6e6e6</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="bg_navigation_drawlayout">#bfff8800</color>
+    <color name="bg_container_content">#80000000</color>
+    <color name="item_drawlayout">#7ffca400</color>
+    <color name="start">#F2F8A552</color>
+    <color name="end">#F27A33</color>
+    <color name="selected_tab">#9E9D9D</color>
+    <color name="bg_tab">#F8A552</color>
+    <color name="color_text_language">#4E5D6B</color>
+    <color name="color_text_menu_1">#161C21</color>
+    <color name="size_text">#E48E37</color>
+    <color name="color_text_translate">#7D8B98</color>
+    <color name="text_header">#ffffff</color>
+    <color name="color_text_header">#ffffff</color>
+    <color name="color_text_sum">#E48E37</color>
+    <color name="color_text_inactive">#A6B5C5</color>
+    <color name="color_text_active">#161C21</color>
+    <color name="color_text_search">#263038</color>
+    <color name="header">#F89E43</color>
+    <color name="caption">#7D8B98</color>
+    <color name="secondary">#4E5D6B</color>
+    <color name="main_color">#161C21</color>
+    <color name="background_default">#F5F7F7</color>
+    <color name="highlight">#E48E37</color>
+
+
+</resources>

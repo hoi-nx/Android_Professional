@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Android_Professional</string>
+
+    <string name="diagonallayout_description">Android cung cấp một khuôn khổ ứng dụng phong phú cho phép bạn xây dựng các ứng dụng và trò chơi mới cho các thiết bị di động trong môi trường ngôn ngữ Java. Tài liệu được liệt kê trong vùng điều hướng bên trái sẽ cung cấp chi tiết về cách xây dựng ứng dụng bằng cách sử dụng các API khác nhau của Android.</string>
+    <string name="about_me">About me</string>
+    <string name="select_language">Select your language</string>
+    <string name="language_english">English</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_france">FRANCISE</string>
+    <string name="language_espanol">ESPANOL</string>
+    <string name="search">Search</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ways_of_expression">What do you want to express?</string>
+    <string name="all">All</string>
+    <string name="informal">Informal</string>
+    <string name="formal">Formal</string>
+    <string name="upgrade_app">Upgrade App</string>
+    <string name="recents">Recents</string>
+    <string name="share">Share</string>
+    <string name="rate_app">Rate this app</string>
+    <string name="settings">Settings</string>
+    <string name="my_favorite">My favorite</string>
+    <string name="about_us">About us</string>
+    <string name="about_expressa">About Us</string>
+    <string name="wantto_open_network_setting">No internet connection. Do you want to open network settings?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="recently">Recently</string>
+    <string name="favorite">Favorite</string>
+    <string name="introduce">Introduce</string>
+    <string name="language">Language</string>
+    <string name="size_text">Size text</string>
+    <string name="normal">Normal</string>
+    <string name="share_app">Share app</string>
+    <string name="feedback">Feedback</string>
+    <string name="version_app">Version 1.0.1 [Build 16]</string>
+
+
+
+</resources>
