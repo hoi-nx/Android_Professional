@@ -22,7 +22,7 @@
 
             <com.github.siyamed.shapeimageview.HexagonImageView
                 android:id="@+id/img_"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="120dp"
                android:adjustViewBounds="true"
                 android:layout_centerInParent="true"

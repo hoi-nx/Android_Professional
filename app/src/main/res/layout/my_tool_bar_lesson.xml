@@ -11,7 +11,7 @@
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:padding="7dp"
+        android:padding="10dp"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_action_back" />
 

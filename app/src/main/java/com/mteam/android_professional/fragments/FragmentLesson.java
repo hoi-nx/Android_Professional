@@ -84,12 +84,7 @@ public class FragmentLesson extends Fragment implements ICardView {
             }
 
         }
-        mImgBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getActivity().onBackPressed();
-            }
-        });
+
 
 
 
@@ -137,6 +132,12 @@ public class FragmentLesson extends Fragment implements ICardView {
         viewPager.setOffscreenPageLimit(3);
         // tooltipIndicator.setupViewPager(viewPager);
         // mCardShadowTransformer.enableScaling(true);
+        mImgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
 
     }
     @SuppressLint("NewApi")
