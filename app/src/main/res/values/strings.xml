@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Android_Professional</string>
+    <string name="app_name">Professional Android</string>
+    <string name="title">Professional Android</string>
 
     <string name="diagonallayout_description">Android cung cấp một khuôn khổ ứng dụng phong phú cho phép bạn xây dựng các ứng dụng và trò chơi mới cho các thiết bị di động trong môi trường ngôn ngữ Java. Tài liệu được liệt kê trong vùng điều hướng bên trái sẽ cung cấp chi tiết về cách xây dựng ứng dụng bằng cách sử dụng các API khác nhau của Android.</string>
     <string name="about_me">About me</string>

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -115,6 +116,8 @@ public class FragmentLesson extends Fragment implements ICardView {
     @SuppressLint("NewApi")
     private void initComponent() {
         // img.setImageBitmap(BitmapFactory.decodeByteArray(chapter.getImgChapter(), 0 ,chapter.getImgChapter().length));
+        Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(),"fonts/movation_font.otf");
+        txtMotivation.setTypeface(typeface);
         setImageFromAssets(img, img.getContext(), "images/"+chapter.getImgChapter());
         txtMotivation.setText(chapter.getMotivation());
 
@@ -138,6 +141,8 @@ public class FragmentLesson extends Fragment implements ICardView {
                 getActivity().onBackPressed();
             }
         });
+
+
 
     }
     @SuppressLint("NewApi")
