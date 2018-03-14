@@ -3,6 +3,7 @@ package com.mteam.android_professional.fragments;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,7 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -23,6 +26,7 @@ import com.mteam.android_professional.activity.MainActivity;
 import com.mteam.android_professional.adapter.AdapterRcChapter;
 import com.mteam.android_professional.interfaces.IList;
 import com.mteam.android_professional.obj.Chapter;
+import com.mteam.android_professional.obj.Lesson;
 import com.stone.vega.library.VegaLayoutManager;
 
 import java.lang.reflect.Type;
@@ -38,6 +42,8 @@ public class FragmentChapter extends Fragment implements IList {
     private RecyclerView rcView;
     private List<Chapter> chapterList;
     private LinearLayout linearLayout;
+    private ImageView imgMenu;
+
 
     @Nullable
     @Override
@@ -49,7 +55,7 @@ public class FragmentChapter extends Fragment implements IList {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         rcView =getView(). findViewById(R.id.rc_chapter);
-        linearLayout = getView().findViewById(R.id.ln_parent);
+        imgMenu=getView().findViewById(R.id.img_menu);
         rcView.setLayoutManager(new VegaLayoutManager());
         initData();
         runAnimation(rcView);
@@ -59,8 +65,6 @@ public class FragmentChapter extends Fragment implements IList {
     }
     @SuppressLint("NewApi")
     private void initData() {
-        //chapterList = ManagerDataSQLite.getIntance(getContext()).getListChapter(getContext());
-
       getActivity().runOnUiThread(new Runnable() {
           @Override
           public void run() {
@@ -71,6 +75,17 @@ public class FragmentChapter extends Fragment implements IList {
               chapterList = gson.fromJson(jsonString, type);
           }
       });
+
+      imgMenu.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              ((MainActivity)getActivity()).openMenu();
+          }
+      });
+
+        
+
+
 
 
     }
@@ -106,12 +121,7 @@ public class FragmentChapter extends Fragment implements IList {
     @Override
     public void itemClick(int position) {
         Chapter chapter = chapterList.get(position);
-
-        ((MainActivity)getActivity()).openFragmentLesson(chapter);
-
-
+       ((MainActivity)getActivity()).openFragmentLesson(chapter);
     }
-    
-
 
 }

@@ -23,13 +23,13 @@
             <com.github.siyamed.shapeimageview.HexagonImageView
                 android:id="@+id/img_"
                 android:layout_width="150dp"
-                android:layout_height="120dp"
+                android:layout_height="150dp"
                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
                 android:layout_centerInParent="true"
                 android:src="@drawable/demo"
                 app:siBorderWidth="2dp"
-
-                app:siBorderColor="@color/colorAccent"/>
+                app:siBorderColor="@color/colorBlue"/>
 
             <TextView
                 android:id="@+id/txt_motivation"
@@ -40,6 +40,7 @@
                 android:layout_marginRight="10dp"
                 android:gravity="center"
                 android:padding="10dp"
+                android:textColor="#212121"
                 android:text="Life is 10% what happens to you and 90% of how you react to it !"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -62,10 +63,10 @@
             app:ti_lineMargin="4dp"
             app:ti_lineWidth="24dp"
             app:ti_lineWidthSelected="80dp"
-            app:ti_selectedLineDrawable="@drawable/tooltip_indicator_rounded_line_selected"
+            app:ti_selectedLineDrawable="@drawable/tooltip_indicator_line_selected"
             app:ti_tooltipHeight="180dp"
             app:ti_tooltipWidth="100dp"
-            app:ti_unselectedLineDrawable="@drawable/tooltip_indicator_rounded_line_unselected" />
+            app:ti_unselectedLineDrawable="@drawable/tooltip_indicator_line_unselected" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewPager_lesson"

@@ -1,5 +1,9 @@
 package com.mteam.android_professional.interfaces;
 
+import com.mteam.android_professional.obj.Lesson;
+
+import java.util.List;
+
 /**
  * Created by Stealer Of Souls on 2/4/2018.
  */

@@ -2,9 +2,17 @@ package com.mteam.android_professional;
 
 import android.content.Context;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.mteam.android_professional.obj.Chapter;
+import com.mteam.android_professional.obj.Lesson;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Stealer Of Souls on 2/19/2018.
@@ -39,5 +47,21 @@ public class Utils {
             }
         }
         return returnString.toString();
+    }
+
+    public static List<Lesson> getLessonList(Chapter chapter,Context context) {
+
+        if (chapter != null) {
+            int idChapter = chapter.getIdChapter();
+            String jsonString = Utils.readFileFromAssets("data/lesson_android_c" + idChapter + ".txt", context);
+            if (!jsonString.isEmpty() && jsonString != null) {
+                Gson gson = new Gson();
+                Type type = new TypeToken<List<Lesson>>() {
+                }.getType();
+                return gson.fromJson(jsonString, type);
+            }
+
+        }
+        return null;
     }
 }

@@ -42,19 +42,22 @@ import me.huseyinozer.TooltipIndicator;
  * Created by Stealer Of Souls on 2/17/2018.
  */
 
+@SuppressLint("ValidFragment")
 public class FragmentLesson extends Fragment implements ICardView {
     private ViewPager viewPager;
     private AdapterViewPagerLesson adapterViewPagerLesson;
-    private int idChapter;
     private ShadowTransformer mCardShadowTransformer;
     private TooltipIndicator tooltipIndicator;
     private List<Lesson> lessonList;
     private ImageView img;
-    private TextView txtMotivation;
-    private Chapter chapter;
+    private TextView txtMotivation,tvLesson;
     private ImageView mImgBack;
+    private Chapter chapter;
 
-
+    public FragmentLesson(Chapter chapter) {
+        this.lessonList = lessonList;
+        this.chapter=chapter;
+    }
 
     @Nullable
     @Override
@@ -73,21 +76,7 @@ public class FragmentLesson extends Fragment implements ICardView {
     }
     @SuppressLint("NewApi")
     private void initData() {
-        chapter = (Chapter) getArguments().getSerializable(Contants.CHAPTER);
-        if (chapter != null) {
-            idChapter = chapter.getIdChapter();
-            String jsonString = Utils.readFileFromAssets("data/lesson_android_c" + idChapter + ".txt", getContext());
-            if (!jsonString.isEmpty() && jsonString != null) {
-                Gson gson = new Gson();
-                Type type = new TypeToken<List<Lesson>>() {
-                }.getType();
-                lessonList = gson.fromJson(jsonString, type);
-            }
-
-        }
-
-
-
+        lessonList=Utils.getLessonList(chapter,getContext());
 
     }
 
@@ -97,6 +86,9 @@ public class FragmentLesson extends Fragment implements ICardView {
         img = getView().findViewById(R.id.img_);
         txtMotivation = getView().findViewById(R.id.txt_motivation);
         mImgBack=getView().findViewById(R.id.img_arrow_left);
+        tvLesson=getView().findViewById(R.id.tv_lesson);
+        Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(),"fonts/Anton-Regular.ttf");
+        tvLesson.setTypeface(typeface);
     }
 
     public void setImageFromAssets(ImageView mImage, Context context, String nameImage) {
@@ -115,26 +107,22 @@ public class FragmentLesson extends Fragment implements ICardView {
 
     @SuppressLint("NewApi")
     private void initComponent() {
-        // img.setImageBitmap(BitmapFactory.decodeByteArray(chapter.getImgChapter(), 0 ,chapter.getImgChapter().length));
-        Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(),"fonts/movation_font.otf");
+        Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(),"fonts/PinyonScript-Regular.ttf");
         txtMotivation.setTypeface(typeface);
         setImageFromAssets(img, img.getContext(), "images/"+chapter.getImgChapter());
         txtMotivation.setText(chapter.getMotivation());
-
         adapterViewPagerLesson = new AdapterViewPagerLesson(this);
-        if (lessonList != null && lessonList.size() > 0) {
+        if (lessonList!= null && lessonList.size() > 0) {
             for (Lesson x : lessonList) {
                 adapterViewPagerLesson.addCardItem(x);
             }
-
         }
-
         mCardShadowTransformer = new ShadowTransformer(viewPager, adapterViewPagerLesson);
         viewPager.setAdapter(adapterViewPagerLesson);
         viewPager.setPageTransformer(false, mCardShadowTransformer);
         viewPager.setOffscreenPageLimit(3);
-        // tooltipIndicator.setupViewPager(viewPager);
-        // mCardShadowTransformer.enableScaling(true);
+        tooltipIndicator.setupViewPager(viewPager);
+        mCardShadowTransformer.enableScaling(true);
         mImgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -155,7 +143,7 @@ public class FragmentLesson extends Fragment implements ICardView {
         }
         Intent intent = new Intent(getActivity(), DetailActivity.class);
         intent.putExtra(Contants.LESSON, lesson);
-        intent.putExtra(Contants.ID_CHAPTER,idChapter);
+        intent.putExtra(Contants.ID_CHAPTER,chapter.getIdChapter());
         getActivity().startActivity(intent);
 
     }

@@ -40,6 +40,12 @@
 "nameLesson": "Bài 6: Cài đặt máy ảo của Android Studio và Genymation",
 "description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
 "key":false
+ },
+{
+"idChapter":1,
+"idLesson":7,
+"nameLesson": "Bài 7: File điều hướng chương trình AndroidManifest",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
  }
-
 ]

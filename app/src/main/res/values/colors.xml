@@ -41,6 +41,7 @@
     <color name="main_color">#161C21</color>
     <color name="background_default">#F5F7F7</color>
     <color name="highlight">#E48E37</color>
+    <color name="colorBlue">#0089FF</color>
 
 
 </resources>

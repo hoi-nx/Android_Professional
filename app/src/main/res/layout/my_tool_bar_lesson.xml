@@ -16,7 +16,7 @@
         android:src="@drawable/ic_action_back" />
 
     <TextView
-        android:id="@+id/tv_name_group"
+        android:id="@+id/tv_lesson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -26,8 +26,9 @@
         android:gravity="center_horizontal|center_vertical"
         android:maxLines="1"
         android:textColor="#1976D2"
-        android:text=""
-        android:textSize="23dp" />
+        android:text="Chapter"
+        android:layout_marginRight="40dp"
+        android:textSize="25dp" />
 
 
 </RelativeLayout>

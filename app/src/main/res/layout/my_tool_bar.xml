@@ -7,7 +7,7 @@
     android:background="@android:color/transparent"
     app:layout_collapseMode="pin">
     <ImageView
-        android:id="@+id/img_arrow_left"
+        android:id="@+id/img_menu"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -16,16 +16,16 @@
         android:src="@drawable/ic_action_menu" />
 
     <TextView
-        android:id="@+id/tv_name_group"
+        android:id="@+id/tv_name_chapter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/img_arrow_left"
+        android:layout_toRightOf="@+id/img_menu"
         android:ellipsize="end"
         android:fontFamily="serif"
         android:gravity="center_horizontal|center_vertical"
         android:maxLines="1"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="40dp"
         android:textColor="#1976D2"
         android:text="@string/title"
         android:textSize="25dp" />

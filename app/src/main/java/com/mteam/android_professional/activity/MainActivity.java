@@ -1,24 +1,20 @@
 package com.mteam.android_professional.activity;
 
-import android.animation.Animator;
-import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.DecelerateInterpolator;
+import android.widget.TextView;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
-import com.mteam.android_professional.Contants;
+import com.mteam.android_professional.R;
 import com.mteam.android_professional.fragments.FragmentChapter;
 import com.mteam.android_professional.fragments.FragmentLesson;
-import com.mteam.android_professional.R;
-import com.mteam.android_professional.manager.ManagerDataSQLite;
 import com.mteam.android_professional.obj.Chapter;
 
 import java.util.Random;
@@ -26,6 +22,9 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     private FragmentChapter mFragmentChapter;
     private KenBurnsView mKenBurnsView;
+    private TextView txtNameChapter;
+    private DrawerLayout drawerLayout;
+
 
 //    AccelerateInterpolator accelerateInterpolator = new AccelerateInterpolator();
 //    DecelerateInterpolator decelerateInterpolator = new DecelerateInterpolator();
@@ -82,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         mKenBurnsView = (KenBurnsView) findViewById(R.id.mKenburns);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         initData();
         initComponent();
 
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponent() {
-       // randomBackground();
+        // randomBackground();
 
         FragmentManager manager = getFragmentManager();
         mFragmentChapter = new FragmentChapter();
@@ -99,15 +100,19 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
     }
 
+    public void openMenu() {
+        drawerLayout.openDrawer(GravityCompat.START);
+    }
+
     private void randomBackground() {
         Random random = new Random();
         int index = random.nextInt(2);
         switch (index) {
             case 0:
-              //  mKenBurnsView.setImageResource(R.drawable.ic_action_background_five);
+                //  mKenBurnsView.setImageResource(R.drawable.ic_action_background_five);
                 break;
             case 1:
-             //   mKenBurnsView.setImageResource(R.drawable.ic_action_background_two);
+                //   mKenBurnsView.setImageResource(R.drawable.ic_action_background_two);
                 break;
             default:
                 break;
@@ -122,8 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("ResourceType")
     public void openFragmentLesson(Chapter chapter) {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(Contants.CHAPTER, chapter);
         FragmentManager manager = getFragmentManager();
         //kiem tra fragment login da ton tai trong fragmentmanager chua
         FragmentLesson fragment =
@@ -148,8 +151,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //tao ra login fragment va them vao
-        fragment = new FragmentLesson();
-        fragment.setArguments(bundle);
+        fragment = new FragmentLesson(chapter);
         manager.beginTransaction().
                 setCustomAnimations(
                         R.animator.card_flip_left_in,
