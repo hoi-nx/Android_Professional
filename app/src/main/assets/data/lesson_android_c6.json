@@ -1,0 +1,108 @@
+﻿[
+ {
+"idChapter":6,
+"idLesson":1,
+"nameLesson": "Bài 1: ListView",
+"description": "Tổng quát về Android,lịch sử phát triển,kiến trúc android.....",
+"key":false
+ },
+ {
+"idChapter":6,
+"idLesson":2,
+"nameLesson": "Bài 2: CustomListView",
+"description": "Biết cách cài đặt môi trường và phần mềm để lập trình Android",
+"key":false
+ },
+ {
+"idChapter":6,
+"idLesson":3,
+"nameLesson": "Bài 3: RecyclerView",
+"description": "Tìm hiểu về công cụ Android Studio",
+"key":false
+ },
+ {
+"idChapter":6,
+"idLesson":4,
+"nameLesson": "Bài 4: Spinner",
+"description": "Chương trình đơn giản đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":5,
+"nameLesson": "Bài 5: Autocomplete TextView",
+"description": "Cấu trúc của một project",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 6: Gridview",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 7: DatePicker,TimePicker",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 8: Tabhost",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 9: Mutil Screen Android",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 10: WebView",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 11: Viewpager",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 12: CoordinatorLayout",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 13: TabLayout",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 14: CardView",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":6,
+"idLesson":6,
+"nameLesson": "Bài 15: BottomBar",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ }
+
+]

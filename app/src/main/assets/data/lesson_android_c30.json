@@ -1,0 +1,66 @@
+﻿[
+ {
+"idChapter":2,
+"idLesson":1,
+"nameLesson": "Bài 1: Xây dựng Base Activity",
+"description": "Xây dựng khuôn mẫu cho mọi Activity",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":2,
+"nameLesson": "Bài 2: Xây dựng Base Fragment",
+"description": "Xây dựng khuôn mẫu cho mọi Fragment",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":3,
+"nameLesson": "Bài 3: Xây dựng Base AdapterListView",
+"description": "Xây dựng khuôn mẫu cho mọi Adapter loại bỏ những đoạn code giống nhau",
+"key":false
+ },
+  {
+ "idChapter":2,
+ "idLesson":3,
+ "nameLesson": "Bài 4: Xây dựng Base AdapterListView với Header",
+ "description": "Xây dựng khuôn mẫu cho mọi Adapter loại bỏ những đoạn code giống nhau",
+ "key":false
+  },
+   {
+  "idChapter":2,
+  "idLesson":3,
+  "nameLesson": "Bài 5: Xây dựng  Base AdapterRecyclerview",
+  "description": "Xây dựng khuôn mẫu cho mọi Adapter loại bỏ những đoạn code giống nhau",
+  "key":false
+   },
+ {
+"idChapter":2,
+"idLesson":4,
+"nameLesson": "Bài 6: Xây dựng Base AdapterRecyclerview với Header",
+"description": "Xây dựng khuôn mẫu cho mọi Adapter loại bỏ những đoạn code giống nhau",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":5,
+"nameLesson": "Bài 7: Tổng kết Base Project theo mô hình MVP",
+"description": "Xây dựng khuôn mẫu cho mọi project với mô hình MVP",
+"key":false
+ },
+ {
+ "idChapter":2,
+ "idLesson":5,
+ "nameLesson": "Bài 8: Tổng kết Base Project theo mô hình MVP với BindView",
+ "description": "Xây dựng khuôn mẫu cho mọi project với mô hình MVP",
+ "key":false
+  },
+{
+"idChapter":2,
+"idLesson":6,
+"nameLesson": "Bài 9: Xây dựng Base Project theo mô hình MVVM",
+"description": "Xây dựng khuôn mẫu cho mọi project với mô hình MVVM",
+"key":false
+ }
+
+]

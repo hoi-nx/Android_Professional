@@ -1,6 +1,5 @@
 package com.mteam.android_professional.fragments;
 
-import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.content.Context;
 import android.graphics.Typeface;
@@ -15,8 +14,8 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -26,7 +25,6 @@ import com.mteam.android_professional.activity.MainActivity;
 import com.mteam.android_professional.adapter.AdapterRcChapter;
 import com.mteam.android_professional.interfaces.IList;
 import com.mteam.android_professional.obj.Chapter;
-import com.mteam.android_professional.obj.Lesson;
 import com.stone.vega.library.VegaLayoutManager;
 
 import java.lang.reflect.Type;
@@ -41,8 +39,11 @@ public class FragmentChapter extends Fragment implements IList {
     private AdapterRcChapter adapterChapter;
     private RecyclerView rcView;
     private List<Chapter> chapterList;
-    private LinearLayout linearLayout;
     private ImageView imgMenu;
+    private TextView tvNameChapter;
+    private Typeface mRegular;
+
+
 
 
     @Nullable
@@ -57,18 +58,20 @@ public class FragmentChapter extends Fragment implements IList {
         rcView =getView(). findViewById(R.id.rc_chapter);
         imgMenu=getView().findViewById(R.id.img_menu);
         rcView.setLayoutManager(new VegaLayoutManager());
+        tvNameChapter=getView().findViewById(R.id.tv_name_chapter);
         initData();
         runAnimation(rcView);
+        mRegular= Typeface.createFromAsset(getActivity().getAssets(),"fonts/Anton-Regular.ttf");
+        tvNameChapter.setTypeface(mRegular);
 
 
 
     }
-    @SuppressLint("NewApi")
     private void initData() {
       getActivity().runOnUiThread(new Runnable() {
           @Override
           public void run() {
-               String jsonString= Utils.readFileFromAssets("data/chapter_android.txt",getContext());
+               String jsonString= Utils.readFileFromAssets("data/chapter_android.json",getActivity());
               Log.d("", "initData: "+jsonString);
               Gson gson = new Gson();
               Type type = new TypeToken<List<Chapter>>(){}.getType();
@@ -82,6 +85,8 @@ public class FragmentChapter extends Fragment implements IList {
               ((MainActivity)getActivity()).openMenu();
           }
       });
+
+
 
         
 
@@ -121,7 +126,16 @@ public class FragmentChapter extends Fragment implements IList {
     @Override
     public void itemClick(int position) {
         Chapter chapter = chapterList.get(position);
+        if(chapter.getIdChapter()>6 && chapter.getIdChapter()!=30){
+            Toast.makeText(getActivity(),"Bài học sẽ được cập nhập ở version tiếp theo",Toast.LENGTH_LONG).show();
+            return;
+        }
        ((MainActivity)getActivity()).openFragmentLesson(chapter);
+    }
+
+    @Override
+    public int countLesson(int possion) {
+        return Utils.getLessonList(chapterList.get(possion),getActivity())==null?0: Utils.getLessonList(chapterList.get(possion),getActivity()).size();
     }
 
 }

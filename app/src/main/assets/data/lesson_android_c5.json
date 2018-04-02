@@ -1,0 +1,32 @@
+﻿[
+ {
+"idChapter":5,
+"idLesson":1,
+"nameLesson": "Bài 1: Toast",
+"description": "Tổng quát về Android,lịch sử phát triển,kiến trúc android.....",
+"key":false
+ },
+ {
+"idChapter":5,
+"idLesson":2,
+"nameLesson": "Bài 2: AlertDialog",
+"description": "Biết cách cài đặt môi trường và phần mềm để lập trình Android",
+"key":false
+ },
+ {
+"idChapter":5,
+"idLesson":3,
+"nameLesson": "Bài 3: CustomDialog",
+"description": "Tìm hiểu về công cụ Android Studio",
+"key":false
+ },
+ {
+"idChapter":5,
+"idLesson":4,
+"nameLesson": "Bài 4: Notification",
+"description": "Chương trình đơn giản đầu tiên",
+"key":false
+ }
+
+
+]

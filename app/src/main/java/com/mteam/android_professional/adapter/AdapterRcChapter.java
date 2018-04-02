@@ -49,8 +49,8 @@ public class AdapterRcChapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         mViewHolder.tvDiscription.setText(chapter.getDiscription());
         Log.d("", "onBindViewHolder: "+chapter.getIdChapter());
 
-       lessonList=Utils.getLessonList(chapter,mViewHolder.itemView.getContext());
-        mViewHolder.tvNumberLesson.setText(lessonList.size()+"");
+
+        mViewHolder.tvNumberLesson.setText(iList.countLesson(position)+"");
 
         mViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

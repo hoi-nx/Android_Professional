@@ -1,0 +1,52 @@
+﻿[
+ {
+"idChapter":4,
+"idLesson":1,
+"nameLesson": "Bài 1: Giới thiệu về các cách sử lý sự kiện trên View",
+"description": "Tổng quát về Android,lịch sử phát triển,kiến trúc android.....",
+"key":false
+ },
+ {
+"idChapter":4,
+"idLesson":2,
+"nameLesson": "Bài 2: on Click XML",
+"description": "Biết cách cài đặt môi trường và phần mềm để lập trình Android",
+"key":false
+ },
+ {
+"idChapter":4,
+"idLesson":3,
+"nameLesson": "Bài 3: anomous listener",
+"description": "Tìm hiểu về công cụ Android Studio",
+"key":false
+ },
+ {
+"idChapter":4,
+"idLesson":4,
+"nameLesson": "Bài 4: variable as Listener",
+"description": "Chương trình đơn giản đầu tiên",
+"key":false
+ },
+{
+"idChapter":4,
+"idLesson":5,
+"nameLesson": "Bài 5: Activity as Listener",
+"description": "Cấu trúc của một project",
+"key":false
+ },
+{
+"idChapter":4,
+"idLesson":6,
+"nameLesson": "Bài 6: Explicit class Listener",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":4,
+"idLesson":6,
+"nameLesson": "Bài 6: View Subclassing",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ }
+
+]

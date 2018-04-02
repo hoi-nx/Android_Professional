@@ -41,8 +41,17 @@ public class DetailActivity extends AppCompatActivity {
 
         mMarkdownView = (MarkdownView) findViewById(R.id.mark_view);
         mMarkdownView.addStyleSheet(mStyle);
-        //http://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile
-        mStyle.addRule("body", "line-height: 1.6", "padding: 10px","font-size: 16px");
+        initMardowView();
+       // mMarkdownView.setBean(myBean);
+        mMarkdownView.loadMarkdownFromAsset("data/mds/c"+idChapter+"/bai"+idLesson+"_c"+idChapter+".md");
+
+        mMarkdownView.getSettings().setBuiltInZoomControls(true);
+        mMarkdownView.getSettings().setDisplayZoomControls(false);
+
+    }
+
+    private void initMardowView() {
+        mStyle.addRule("body", "line-height: 1.6", "padding: 5px","font-size: 17px");
         mStyle.addFontFace("MyFont", "condensed", "italic", "bold", "url('myfont.ttf')");
         mStyle.addRule("h1", "font-size: 30px");
         mStyle.addRule("h2", "font-size: 24px");
@@ -50,6 +59,7 @@ public class DetailActivity extends AppCompatActivity {
         mStyle.addRule("h4", "font-size: 16px");
         mStyle.addRule("h5", "font-size: 14px");
         mStyle.addRule("h6", "font-size: 14px");
+        mStyle.addRule("label","font-size:30px");
         mStyle.addMedia("screen and (min-width: 320px)");
         mStyle.addRule("h1", "color: green");
         mStyle.endMedia();
@@ -68,12 +78,6 @@ public class DetailActivity extends AppCompatActivity {
         mStyle.addMedia("screen and (min-width: 1281px)");
         mStyle.addRule("h1", "color: orange");
         mStyle.endMedia();
-       // mMarkdownView.setBean(myBean);
-        mMarkdownView.loadMarkdownFromAsset("data/mds/c"+idChapter+"/bai"+idLesson+"_c"+idChapter+".md");
-
-        mMarkdownView.getSettings().setBuiltInZoomControls(true);
-        mMarkdownView.getSettings().setDisplayZoomControls(false);
-
     }
 
     private void findViewByIds() {

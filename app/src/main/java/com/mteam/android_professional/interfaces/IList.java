@@ -13,4 +13,7 @@ public interface IList {
 
     Object getData(int position);
     void itemClick(int position);
+
+
+    int countLesson(int position);
 }

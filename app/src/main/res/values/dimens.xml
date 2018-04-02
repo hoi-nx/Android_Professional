@@ -7,4 +7,9 @@
     <dimen name="size_text_15sp">15sp</dimen>
     <dimen name="size_img">25dp</dimen>
     <integer name="time_animtion">300</integer>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_width_avata">150dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="with_layout">300dp</dimen>
 </resources>

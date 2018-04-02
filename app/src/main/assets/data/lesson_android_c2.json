@@ -1,0 +1,58 @@
+﻿[
+ {
+"idChapter":2,
+"idLesson":1,
+"nameLesson": "Bài 1: Giới thiệu tổng quan về Git",
+"description": "Tổng quát về Android,lịch sử phát triển,kiến trúc android.....",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":2,
+"nameLesson": "Bài 2: Cài đặt GIT trên Window",
+"description": "Biết cách cài đặt môi trường và phần mềm để lập trình Android",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":3,
+"nameLesson": "Bài 3: Cấu hình GIT cho lần sử dụng đầu tiên",
+"description": "Tìm hiểu về công cụ Android Studio",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":4,
+"nameLesson": "Bài 4:Khởi tạo một Repository",
+"description": "Chương trình đơn giản đầu tiên",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":5,
+"nameLesson": "Bài 5:  Một số lệnh cơ bản trên GIT",
+"description": "Cấu trúc của một project",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":6,
+"nameLesson": "Bài 6: Clone và Push Project từ máy tính lên GIT",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":7,
+"nameLesson": "Bài 7:Backup và Pull Project",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":8,
+"nameLesson": "Bài 8:Sử dụng GIT trong Android Studio",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ }
+]

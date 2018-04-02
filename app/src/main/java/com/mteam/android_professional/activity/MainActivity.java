@@ -3,76 +3,45 @@ package com.mteam.android_professional.activity;
 import android.annotation.SuppressLint;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
+import com.mteam.android_professional.Contants;
+import com.mteam.android_professional.MyPreferences;
 import com.mteam.android_professional.R;
+import com.mteam.android_professional.Utils;
 import com.mteam.android_professional.fragments.FragmentChapter;
 import com.mteam.android_professional.fragments.FragmentLesson;
+import com.mteam.android_professional.fragments.FragmentLoginChat;
 import com.mteam.android_professional.obj.Chapter;
 
 import java.util.Random;
 
+import io.intercom.android.sdk.Intercom;
+
 public class MainActivity extends AppCompatActivity {
     private FragmentChapter mFragmentChapter;
     private KenBurnsView mKenBurnsView;
-    private TextView txtNameChapter;
+    private TextView tvName,tvMail,tvAboutUs,tvShare,tvChat,tvRatting,tvLanguage,tvVersion;
     private DrawerLayout drawerLayout;
+    private RelativeLayout mLayout,mAboutMe;
+    private MyPreferences myPreferences;
+    private ImageView imgLogout;
 
-
-//    AccelerateInterpolator accelerateInterpolator = new AccelerateInterpolator();
-//    DecelerateInterpolator decelerateInterpolator = new DecelerateInterpolator();
-//
-//    private void animationOpenFragment(View h1, View h2) {
-//        final View visibleList;
-//        final View invisibleList;
-//        if (h1.getVisibility() == View.GONE) {
-//            visibleList = h2;
-//            invisibleList = h1;
-//        } else {
-//            invisibleList = h2;
-//            visibleList = h1;
-//        }
-//        h1.setVisibility(View.GONE);
-//        ObjectAnimator objectAnimatorVisible = ObjectAnimator.ofFloat(visibleList, "rotationY", 0f, 90f);
-//        objectAnimatorVisible.setDuration(500);
-//        objectAnimatorVisible.setInterpolator(accelerateInterpolator);
-//
-//        final ObjectAnimator objectAnimatorInvisible = ObjectAnimator.ofFloat(invisibleList, "rotationY", -90f, 0f);
-//        objectAnimatorInvisible.setDuration(500);
-//        objectAnimatorInvisible.setInterpolator(decelerateInterpolator);
-//        objectAnimatorVisible.addListener(new Animator.AnimatorListener() {
-//            @Override
-//            public void onAnimationStart(Animator animator) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationEnd(Animator animator) {
-//             visibleList.setVisibility(View.GONE);
-//                objectAnimatorInvisible.start();
-//             invisibleList.setVisibility(View.VISIBLE);
-//            }
-//
-//            @Override
-//            public void onAnimationCancel(Animator animator) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat(Animator animator) {
-//
-//            }
-//        });
-//        objectAnimatorVisible.start();
-//        h1.setVisibility(View.VISIBLE);
-//    }
+    private Typeface monterLight,mLight,monterRegular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,18 +49,72 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        mKenBurnsView = (KenBurnsView) findViewById(R.id.mKenburns);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         initData();
-        initComponent();
+        initView();
 
+        initComponent();
+        initEvents();
+
+    }
+
+    private void initView() {
+        mKenBurnsView = (KenBurnsView) findViewById(R.id.mKenburns);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mLayout= (RelativeLayout) findViewById(R.id.layout_send_message);
+        imgLogout= (ImageView) findViewById(R.id.img_logout);
+        mAboutMe= (RelativeLayout) findViewById(R.id.layout_about);
+        tvName= (TextView) findViewById(R.id.tv_name);
+        tvMail= (TextView) findViewById(R.id.tv_gmail);
+
+        tvAboutUs= (TextView) findViewById(R.id.tv_about_us);
+        tvChat= (TextView) findViewById(R.id.tv_send_message);
+        tvRatting= (TextView) findViewById(R.id.tv_rate);
+        tvShare= (TextView) findViewById(R.id.tv_share);
+        tvLanguage= (TextView) findViewById(R.id.tv_language);
+        tvVersion= (TextView) findViewById(R.id.tv_version);
+
+        tvName.setTypeface(monterRegular);
+        tvMail.setTypeface(monterLight);
+
+        tvShare.setTypeface(mLight);
+        tvAboutUs.setTypeface(mLight);
+        tvChat.setTypeface(mLight);
+        tvRatting.setTypeface(mLight);
+        tvLanguage.setTypeface(mLight);
+        tvVersion.setTypeface(mLight);
+    }
+
+    private void initEvents() {
+        mLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,R.string.update_version,Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+        imgLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgLogout.setVisibility(View.GONE);
+                myPreferences.putBoolean(Contants.LOGIN,false);
+                Intercom.client().logout();
+            }
+        });
+
+        mAboutMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
     private void initComponent() {
         // randomBackground();
-
         FragmentManager manager = getFragmentManager();
         mFragmentChapter = new FragmentChapter();
         FragmentTransaction transaction = manager.beginTransaction();
@@ -120,12 +143,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        //ManagerDataSQLite.getIntance(this).inits(this);
-        // ManagerDataSQLite.getIntance(this).onUpgrade(sqLiteDatabase,1,2);
+        myPreferences=new MyPreferences(this);
+        monterRegular= Typeface.createFromAsset(getAssets(),"fonts/montserrat_regular.otf");
+        monterLight=Typeface.createFromAsset(getAssets(),"fonts/montserrat_extralight.otf");
+        mLight=Typeface.createFromAsset(getAssets(),"fonts/montserrat_light.otf");
 
     }
 
-    @SuppressLint("ResourceType")
     public void openFragmentLesson(Chapter chapter) {
         FragmentManager manager = getFragmentManager();
         //kiem tra fragment login da ton tai trong fragmentmanager chua

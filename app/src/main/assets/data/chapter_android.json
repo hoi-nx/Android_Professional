@@ -1,0 +1,230 @@
+﻿[
+        {
+        "idChapter" : 1,
+        "name_title" : "Chương 1: Tổng quan về Android, cài đặt công cụ và First app",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong1.png",
+        "motivation": "If you wish to reach the highest, begin at the lowest."
+        },
+{
+        "idChapter" : 2,
+        "name_title" : "Chương 2: Git cơ bản",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong2.png",
+        "motivation": "Ever tried, ever failed, no matter, try again, fail again, fail better."
+        },
+
+ {
+        "idChapter" : 3,
+        "name_title" : "Chương 3: Layout Và Các View Cơ Bản Trong Android",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong3.png",
+        "motivation": "No one can make you feel inferior without your consent."
+        },
+
+ {
+        "idChapter" : 4,
+        "name_title" : "Chương 4: Các Kĩ Thuật Sử Lý Sự Kiện Trong View",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong4.png",
+        "motivation": "Everything negative – pressure, challenges – is all an opportunity for me to rise."
+        },
+ {
+        "idChapter" : 5,
+        "name_title" : "Chương 5: Cửa sổ thông báo trong android",
+        "name_title" : "Chương 5: Cửa sổ thông báo trong android",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong5.png",
+        "motivation": "Enthusiasm is the mother of effort, and without it nothing great was ever achieved."
+        },
+ {
+        "idChapter" : 6,
+        "name_title" : "Chương 6: View Nâng Cao",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong6.png",
+        "motivation": "A little more persistence, a little more effort, and what seemed hopeless failure may turn to glorious success."
+        },
+  {
+         "idChapter" : 7,
+         "name_title" : "Chương 7: CustomView",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+         "link_img" : "chuong7.png",
+         "motivation": "A second – class effort is a first- class mistake."
+         },
+ {
+        "idChapter" : 8,
+        "name_title" : "Chương 8: Activity",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong8.png",
+        "motivation": "Life is 10% what happens to you and 90% of how you react to it!"
+        },
+ {
+        "idChapter" : 9,
+        "name_title" : "Chương 9: Assets Và lưu trạng thái của ứng dụng",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong9.png",
+        "motivation": "The man who removes a mountain begins by carrying away small stones."
+        },
+ {
+        "idChapter" : 10,
+        "name_title" : "Chương 10:Menu điều kiển và tìm kiếm",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong10.png",
+        "motivation": "If we don’t plant knowledge when young, it will give us no shade when we’re old. "
+        },
+ {
+        "idChapter" : 11,
+        "name_title" : "Chương 11: Fragment",
+        "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong11.png",
+        "motivation": "On the way to success, there is no trace of lazy men."
+        },
+ {
+        "idChapter" : 12,
+        "name_title" : "Chương 12:Animation",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong12.png",
+        "motivation": "Nothing is too small to know, and nothing too big to attempt."
+        },
+ {
+        "idChapter" : 13,
+        "name_title" : "Chương 13:Dawable",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong13.png",
+        "motivation": "Only those who dare to fail greatly can ever achieve greatly."
+        },
+ {
+        "idChapter" : 14,
+        "name_title" : "Chương 14:Tiến Trình trong android",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong14.png",
+        "motivation": "A winner never stops trying."
+        },
+ {
+        "idChapter" : 15,
+        "name_title" : "Chương 15: SQLite,Realm",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong15.png",
+        "motivation": "Knows your limits, but never stop trying to exceed them."
+        },
+ {
+        "idChapter" : 16,
+        "name_title" : "Chương 16: ContentProvider",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong16.png",
+        "motivation": "The best way to predict the future is to create it."
+        },
+{
+        "idChapter" : 17,
+        "name_title" : "Chương 17: BroadCast",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong17.png",
+        "motivation": "You are never too old to set another goal or to dream a new dream."
+        },
+{
+        "idChapter" : 18,
+        "name_title" : "Chương 18: Service",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong18.png",
+        "motivation": " Live as if you were to die tomorrow. Learn as if you were to live forever."
+        },
+{
+        "idChapter" : 19,
+        "name_title" : "Chương 19: Tương Tác Dịch Vụ Web",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong19.png",
+        "motivation": " Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles begins with a single step."
+        },
+{
+        "idChapter" : 20,
+        "name_title" : "Chương 20:Goolge Map",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong20.png",
+        "motivation": " Learning is like rowing upstream, not to advance is to drop back."
+        },
+{
+        "idChapter" : 21,
+        "name_title" : "Chương 21:Firebase",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong21.png",
+        "motivation": "The secret of getting ahead is getting started. "
+        },
+{
+        "idChapter" : 22,
+        "name_title" : "Chương 22:Sensor",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong22.png",
+        "motivation": " It doesn’t matter how slowly you go as long as you do not stop."
+        },
+{
+        "idChapter" : 23,
+        "name_title" : "Chương 23:Camera",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong23.png",
+        "motivation": "By failing to prepare, you are preparing to fail."
+        },
+{
+        "idChapter" : 24,
+        "name_title" : "Chương 24: WindowManager",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong24.png",
+        "motivation": "Is it not enjoyable to learn and practise what you learn?"
+        },
+{
+        "idChapter" : 25,
+        "name_title" : "Chương 25: DataBinding trong Android",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong27.png",
+        "motivation": " Tell me and I forget. Teach me and I remember. Involve me and I learn."
+        },
+{
+        "idChapter" : 26,
+        "name_title" : "Chương 26: RxJava, RxAndroid, Retrofit",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong26.png",
+        "motivation": "Put your best effort towards your best opportunities, not your biggest problems."
+        },
+{
+        "idChapter" : 27,
+        "name_title" : "Chương 27: GooglePlay",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong25.png",
+        "motivation": "Set your target and keep trying until you reach it."
+        },
+{
+        "idChapter" : 28,
+        "name_title" : "Chương 28: Một số plugin thường dùng để giảm thiểu thời gian code",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong28.png",
+        "motivation": "Study not what the world is doing, but what you can do for it."
+        },
+{
+        "idChapter" : 29,
+        "name_title" : "Chương 29:Một số thứ viện hỗ trợ",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong29.png",
+        "motivation": "The most beautiful thing about learning is that no one take that away form you."
+        },
+
+{
+        "idChapter" : 30,
+        "name_title" : "Chương 30: Mô hình MVC, MVP, MVVM",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong30.png",
+        "motivation": "If you are not willing to learn, no one can help you. If you are determined to learn, no one can stop you."
+        },
+{
+        "idChapter" : 31,
+        "name_title" : "Chương 31: Xây dựng base cho 1000 project",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong31.png",
+        "motivation": "It’s what we think we know keep us from learning."
+        },
+{
+        "idChapter" : 32,
+        "name_title" : "Chương 32: Các Project Thực Tế",
+         "description" : "Hiểu được khái quát về android và công cụ lập trình",
+        "link_img" : "chuong32.png",
+        "motivation": "Never stop learning because life never stop teaching."
+        }
+]

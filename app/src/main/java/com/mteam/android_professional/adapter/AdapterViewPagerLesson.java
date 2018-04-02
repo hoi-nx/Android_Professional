@@ -1,5 +1,6 @@
 package com.mteam.android_professional.adapter;
 
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.widget.CardView;
@@ -26,6 +27,7 @@ public class AdapterViewPagerLesson extends PagerAdapter implements ICardAdapter
     private List<CardView> mViews;
     private List<Lesson> mData;
     private ICardView iCardAdapter;
+    private Typeface monterBold,monterLight;
 
 
     public AdapterViewPagerLesson(ICardView iCardAdapter) {
@@ -71,6 +73,10 @@ public class AdapterViewPagerLesson extends PagerAdapter implements ICardAdapter
         TextView txtName=view.findViewById(R.id.name_lesson);
         TextView tvDiscrip=view.findViewById(R.id.tvDiscrip);
         ImageView imgLock=view.findViewById(R.id.img_lock);
+        monterBold=Typeface.createFromAsset(container.getContext().getAssets(),"fonts/montserrat_regular.otf");
+        monterLight=Typeface.createFromAsset(container.getContext().getAssets(),"fonts/montserrat_extralight.otf");
+        txtName.setTypeface(monterBold);
+        tvDiscrip.setTypeface(monterLight);
         if (mBaseElevation == 0) {
             mBaseElevation = cardView.getCardElevation();
         }

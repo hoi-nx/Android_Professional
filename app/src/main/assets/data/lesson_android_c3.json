@@ -1,0 +1,51 @@
+﻿[
+ {
+"idChapter":2,
+"idLesson":1,
+"nameLesson": "Bài 1: Giới thiệu về các Layout trong Android",
+"description": "Tổng quát về Android,lịch sử phát triển,kiến trúc android.....",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":2,
+"nameLesson": "Bài 2: LinearLayout",
+"description": "Biết cách cài đặt môi trường và phần mềm để lập trình Android",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":3,
+"nameLesson": "Bài 3: Relative Layout",
+"description": "Tìm hiểu về công cụ Android Studio",
+"key":false
+ },
+ {
+"idChapter":2,
+"idLesson":4,
+"nameLesson": "Bài 4:FrameLayout",
+"description": "Chương trình đơn giản đầu tiên",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":5,
+"nameLesson": "Bài 5:  TableLayout",
+"description": "Cấu trúc của một project",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":6,
+"nameLesson": "Bài 6: Ý nghĩa của findViewById()",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ },
+{
+"idChapter":2,
+"idLesson":6,
+"nameLesson": "Bài 7:TextView, EditText, Buttom",
+"description": "Cài đặt máy ảo để chạy thử ứng dụng đầu tiên",
+"key":false
+ }
+]

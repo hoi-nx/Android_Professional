@@ -6,6 +6,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:weightSum="4">
+
     <include layout="@layout/my_tool_bar_lesson"></include>
 
     <RelativeLayout
@@ -22,27 +23,26 @@
 
             <com.github.siyamed.shapeimageview.HexagonImageView
                 android:id="@+id/img_"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-               android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
+                android:layout_width="@dimen/image_width_avata"
+                android:layout_height="@dimen/image_width_avata"
                 android:layout_centerInParent="true"
-                android:src="@drawable/demo"
-                app:siBorderWidth="2dp"
-                app:siBorderColor="@color/colorBlue"/>
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:siBorderColor="@color/colorBlue"
+                app:siBorderWidth="2dp" />
 
             <TextView
                 android:id="@+id/txt_motivation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
                 android:gravity="center"
-                android:padding="10dp"
-                android:textColor="#212121"
+                android:padding="@dimen/margin10"
                 android:text="Life is 10% what happens to you and 90% of how you react to it !"
-                android:textSize="20dp" />
+                android:textColor="#212121"
+                android:textSize="16dp" />
         </LinearLayout>
 
 
@@ -53,26 +53,26 @@
         android:layout_height="0dp"
         android:layout_weight="2">
 
-        <me.huseyinozer.TooltipIndicator
-            android:id="@+id/tooltip_indicator"
-            android:layout_width="match_parent"
+        <com.shuhart.bubblepagerindicator.BubblePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:gravity="center"
-            app:ti_lineHeight="6dp"
-            app:ti_lineMargin="4dp"
-            app:ti_lineWidth="24dp"
-            app:ti_lineWidthSelected="80dp"
-            app:ti_selectedLineDrawable="@drawable/tooltip_indicator_line_selected"
-            app:ti_tooltipHeight="180dp"
-            app:ti_tooltipWidth="100dp"
-            app:ti_unselectedLineDrawable="@drawable/tooltip_indicator_line_unselected" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            app:bpi_fillColor="@color/colorBlue"
+            app:bpi_marginBetweenCircles="5dp"
+            app:bpi_onSurfaceCount="@integer/default_bubble_indicator_on_surface_count"
+            app:bpi_pageColor="@color/colorListDivider"
+            app:bpi_radius="5dp"
+            app:bpi_risingCount="@integer/default_bubble_indicator_rising_count" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewPager_lesson"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/tooltip_indicator"
+            android:layout_above="@+id/indicator"
             android:clipToPadding="false"
             android:overScrollMode="never"
             android:paddingEnd="@dimen/card_padding"
