@@ -17,8 +17,8 @@ nay.
 dụng thực tế.  
 - Có khả năng tạo được những ứng dụng Android, ứng dụng game Android.  
 - Có thể xây dựng được một base dành cho mọi ứng dụng.
-# Google Play ---Professional Android---
-[images/en_badge_web_generic.png](https://play.google.com/store/apps/details?id=com.mteam.android_professional)
+# Google Play
+[![](images/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.mteam.android_professional)
 
 # ScreenShots
 
