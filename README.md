@@ -17,24 +17,13 @@ nay.
 dụng thực tế.  
 - Có khả năng tạo được những ứng dụng Android, ứng dụng game Android.  
 - Có thể xây dựng được một base dành cho mọi ứng dụng.
-# Google Play
-<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200"/> [Professional Android][1].
-### ScreenShots
+# Google Play ---Professional Android---
+[images/en_badge_web_generic.png](https://play.google.com/store/apps/details?id=com.mteam.android_professional)
 
-![](images/c966a3f30c0bf17a47481888edbe2246.png)
-
-![](images/167961cdd74a00970f965571a5f41522.png)
-
-![](images/f7f49d80861c9d5b7ed283fa7b1667d6.png)
-
-![](images/17b68d72322fd23837588a1ee4b975ae.png)
-
-![](images/0709cbad284d35e8fc09683be8bc7f1e.png)
-
-![](images/3b184676f7112fdffff119d440e4cbbe.png)
+# ScreenShots
 
 <img src="images/c966a3f30c0bf17a47481888edbe2246.png" width="250"/> <img src="images/167961cdd74a00970f965571a5f41522.png" width="250"/> <img src="images/f7f49d80861c9d5b7ed283fa7b1667d6.png" width="250"/> 
 
 <img src="images/17b68d72322fd23837588a1ee4b975ae.png" width="250"/> <img src="images/0709cbad284d35e8fc09683be8bc7f1e.png" width="250"/> <img src="images/3b184676f7112fdffff119d440e4cbbe.png" width="250"/>
 
-[1]: https://play.google.com/store/apps/details?id=com.mteam.android_professional
+
