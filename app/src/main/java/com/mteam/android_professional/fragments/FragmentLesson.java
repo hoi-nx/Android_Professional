@@ -103,7 +103,7 @@ public class FragmentLesson extends Fragment implements ICardView {
     private void initComponent() {
         Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(),"fonts/montserrat_light.otf");
         txtMotivation.setTypeface(typeface);
-        setImageFromAssets(img, img.getContext(), "images/"+chapter.getImgChapter());
+        //setImageFromAssets(img, img.getContext(), "images/"+chapter.getImgChapter());
         txtMotivation.setText(chapter.getMotivation());
         adapterViewPagerLesson = new AdapterViewPagerLesson(this);
         if (lessonList!= null && lessonList.size() > 0) {
