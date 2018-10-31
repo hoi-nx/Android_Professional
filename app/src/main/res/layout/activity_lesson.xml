@@ -29,7 +29,8 @@
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 app:siBorderColor="@color/colorBlue"
-                app:siBorderWidth="2dp" />
+                app:siBorderWidth="2dp"
+                android:src="@drawable/icon_app"/>
 
             <TextView
                 android:id="@+id/txt_motivation"

@@ -44,7 +44,7 @@ public class AdapterRcChapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         MViewHolder mViewHolder = (MViewHolder) holder;
         Chapter chapter = (Chapter) iList.getData(position);
-        setImageFromAssets(mViewHolder.imgChapter,mViewHolder.itemView.getContext(),"images/"+chapter.getImgChapter());
+        //setImageFromAssets(mViewHolder.imgChapter,mViewHolder.itemView.getContext(),"images/"+chapter.getImgChapter());
         mViewHolder.tvName.setText(chapter.getNameChapter());
         mViewHolder.tvDiscription.setText(chapter.getDiscription());
         Log.d("", "onBindViewHolder: "+chapter.getIdChapter());
