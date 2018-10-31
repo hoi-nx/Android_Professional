@@ -22,8 +22,8 @@ dụng thực tế.
 
 # ScreenShots
 
-<img src="images/c966a3f30c0bf17a47481888edbe2246.png" width="250"/> <img src="images/167961cdd74a00970f965571a5f41522.png" width="250"/> <img src="images/f7f49d80861c9d5b7ed283fa7b1667d6.png" width="250"/> 
+<img src="images/c966a3f30c0bf17a47481888edbe2246.jpg" width="250"/> <img src="images/167961cdd74a00970f965571a5f41522.jpg" width="250"/> <img src="images/f7f49d80861c9d5b7ed283fa7b1667d6.png" width="250"/> 
 
-<img src="images/17b68d72322fd23837588a1ee4b975ae.png" width="250"/> <img src="images/0709cbad284d35e8fc09683be8bc7f1e.png" width="250"/> <img src="images/3b184676f7112fdffff119d440e4cbbe.png" width="250"/>
+<img src="images/17b68d72322fd23837588a1ee4b975ae.jpg" width="250"/> <img src="images/0709cbad284d35e8fc09683be8bc7f1e.png" width="250"/> <img src="images/3b184676f7112fdffff119d440e4cbbe.png" width="250"/>
 
 
